@@ -30,12 +30,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Structure 
 ```markdown
-src
-  |-- assets
-  |-- components
-  |-- |-- Base
-  |-- |-- Component A
-  |-- |-- Component B
   src
   |-- assets
   |-- components
