@@ -36,4 +36,19 @@ src
   |-- |-- Base
   |-- |-- Component A
   |-- |-- Component B
+  src
+  |-- assets
+  |-- components
+  |-- |-- Base
+  |-- |-- Component A
+  |-- |-- Component B
+  |-- directives
+  |-- events
+  |-- layout
+  |-- mixins
+  |-- pages
+  |-- plugins
+  |-- router
+  |-- store
+  |-- utils
   ```
