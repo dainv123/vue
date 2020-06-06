@@ -1,4 +1,4 @@
-# my-vue-template
+# VUE TEMPLATE
 
 ## Project setup
 ```
