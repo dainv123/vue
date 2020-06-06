@@ -33,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   src
   |-- assets
   |-- components
-  |-- |-- Base
+  |-- |-- Base/
   |-- |-- Component A
   |-- |-- Component B
   |-- directives
