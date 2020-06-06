@@ -25,9 +25,6 @@ npm run lint
 npm run start
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 ### Structure 
 ```markdown
   src
@@ -71,3 +68,6 @@ new Vue({
   render: h => h(App)
 }).$mount('#hello')
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

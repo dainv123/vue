@@ -7,14 +7,9 @@ import BootstrapVue from 'bootstrap-vue'
 import vueCustomElement from "vue-custom-element";
 import BaseModal from "@/components/Base/BaseModal/BaseModal"
 
-import { AXIOS } from '@/utils/http'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './scss/style.scss'
-
-Vue.config.productionTip = false
-Vue.prototype.$http = AXIOS
 
 Vue.use(VeeValidate)
 Vue.use(BootstrapVue)
@@ -23,7 +18,8 @@ Vue.use(vueCustomElement)
 BaseModal.store = store;
 
 Vue.config.ignoredElements = [
-  "base-modal"
+  "base-modal",
+  ....
 ]
 
 Vue.customElement("base-modal", BaseModal);
