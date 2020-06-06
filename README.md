@@ -46,3 +46,28 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   |-- store
   |-- utils
   ```
+
+### Custom element
+
+```vue
+import vueCustomElement from "vue-custom-element";
+
+Vue.config.ignoredElements = [
+  "base-modal"
+]
+
+Vue.customElement("base-modal", BaseModal);
+```
+
+### Single page app
+
+```vue
+import Router from 'vue-router'
+
+const router = new Router({})
+
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#hello')
+```

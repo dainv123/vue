@@ -28,21 +28,4 @@ const router = new Router({
   ]
 })
 
-// router.beforeEach((to, from, next) => {
-//   const isLoggedIn = store.getters['Authen/isLoggedIn']
-//   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-
-//   if(
-//     requiresAuth &&
-//     !isLoggedIn
-//   ) {
-//     if(to.name !== 'NotFound') {
-//       localStorage.setItem('currentUrl', to.fullPath || '/');
-//     }
-//     next({ path: '/ep/authen/login' })
-//   } else {
-//     next();
-//   }
-// });
-
 export default router;
