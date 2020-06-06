@@ -1,0 +1,101 @@
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+@function getEm($size, $base : $font-size-base) {
+	@return strip-units($size / $base);
+}
+
+@function size($sizes) {
+	$result : '';
+
+	@each $size in $sizes {
+		$rem : $size;
+		@if $result != '' {
+			$result : $result + ' ';
+		}
+
+		@if type_of($size) == number and $size != 0 {
+      $rem : getEm($size) + rem;
+		}
+
+		$result : $result + $rem;
+	}
+
+	$result : $result;
+	@return unquote($result);
+}
+
+@mixin px2rem($property, $sizes, $useFallback : true) {
+	#{$property}: size($sizes);
+}
+
+// Center-align a block level element
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:before, &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin responsive-visibility() {
+  display: block !important;
+  table & {
+    display: table;
+  }
+  tr & {
+    display: table-row !important;
+  }
+  th &,
+  td & {
+    display: table-cell !important;
+  }
+}
+@mixin responsive-invisibility() {
+  display: none !important;
+}
+
+// Grid Custom
+@mixin make-grid-columns-custom($gutter: $grid-gutter-width, $i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left:  ceil(($gutter / 2));
+    padding-right: floor(($gutter / 2));
+  }
+}
+
+@mixin calc-grid-width-tablet($gutter: $grid-gutter-width) {
+  width: $grid-width-tablet + $gutter;
+}
+@mixin calc-grid-width-desktop($gutter: $grid-gutter-width) {
+  width: $grid-width-desktop + $gutter;
+}
+@mixin calc-grid-width-large-desktop($gutter: $grid-gutter-width) {
+  width: $grid-width-large-desktop + $gutter;
+}
+@mixin calc-grid-width-larger-desktop($gutter: $grid-gutter-width) {
+  width: $grid-width-larger-desktop + $gutter;
+}
+
+@mixin to-css3($atribute, $params) {
+  #{$atribute}: #{$params};
+  -webkit-#{$atribute}: #{$params};
+  -moz-#{$atribute}: #{$params};
+  -ms-#{$atribute}: #{$params};
+}

@@ -1,0 +1,60 @@
+.list-complete-enter-active {
+  overflow: hidden;
+  transition: all 1s;
+}
+.list-complete-leave-active {
+  margin-top: 0px;
+  overflow: hidden;
+  transition: all 1s;
+}
+.list-complete-enter, .list-complete-leave-to {
+  height: 0px;
+  opacity: 0;
+  padding: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+.slide-up-enter-active {
+  transition: height .8s ease;
+  transform-origin: center 0;
+  height: 500px;
+}
+.slide-up-leave-active {
+  transition: height .8s ease;
+  transform-origin: center 0;
+  height: 500px;
+}
+.slide-up-enter, .slide-up-leave-to {
+  height: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.slide-fade-enter-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.slide-toggle-enter-active,
+.slide-toggle-leave-active {
+  transition: height .8s ease;
+  transform-origin: center 0;
+}
+.slide-toggle-enter, .slide-toggle-leave-to {
+  transition: height .8s ease;
+  height: 0;
+}
+.fade-custom-enter-active, .fade-custom-active {
+  transition: opacity .25s;
+}
+.fade-custom-enter, .fade-custom-leave-to {
+  opacity: 0;
+}

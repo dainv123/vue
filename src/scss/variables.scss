@@ -1,0 +1,167 @@
+// Typography
+$acc-icon: "acc-icon";
+$FSElliot: "FSElliotPro";
+$FSElliot-light: "FSElliotProLight";
+$FSElliot-bold: "FSElliotProBold";
+$FSElliot-heavy: "FSElliotProHeavy";
+$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base: $FSElliot, $font-family-sans-serif;
+$font-family-light: $FSElliot-light, $font-family-sans-serif;
+$font-family-regular: $FSElliot, $font-family-sans-serif;
+$font-family-bold: $FSElliot-bold, $font-family-sans-serif;
+$font-family-heavy: $FSElliot-heavy, $font-family-sans-serif;
+$font-size-base: 10px;
+$font-size-small: 14px;
+$font-size-h1: 52px;
+$font-size-h2: 40px;
+$font-size-h3: 30px;
+$font-size-h4: 24px;
+$font-size-h5: 18px;
+$font-size-h6: $font-size-small;
+$font-size-h7: 11px;
+$font-size-other: 12px;
+
+$font-size-1: 12px;
+$font-size-2: 20px;
+
+// Path
+$font-path: "~@/assets/fonts/";
+
+// Color variable
+$white: #ffffff;
+$white-1: #f7f7f7;
+$white-2: #fafafa;
+$white-3: #f5f5f5;
+
+// Grey
+$grey: #d2d8db;
+$grey-1: #7f949d;
+$grey-2: #9999b3;
+$grey-3: #e4e8e9;
+$grey-4: #d8d8d8;
+$grey-5: #808080;
+$grey-6: #6f7073;
+$grey-7: #c1c1c1;
+$grey-8: #687175;
+$grey-9: #cccccc;
+$grey-10: #8d9192;
+$grey-12: #8d9192;
+$grey-11: #676b88;
+$grey-13: #d9d9d7;
+$grey-14: #e6e7f4;
+$grey-15: #eff5f6;
+$grey-16: #f8f9fa;
+$grey-17: #dee2e6;
+$grey-18: #bbc1c8;
+$grey-19: #ebebe4;
+$grey-20: #edf5f7;
+$grey-21: #e9ecef;
+$grey-22: #ced4da;
+// Black
+$black: #000000;
+$black-1: #4a4a4a;
+$black-2: #626262;
+$black-3: #244958;
+$black-4: #211b19;
+
+// Blue
+$blue: #003da5;
+$blue-1: #009cde;
+$blue-2: #244958;
+$blue-3: #92c1e9;
+$blue-4: #779bad;
+$blue-5: #93b9c0;
+$blue-6: #183f4f;
+$blue-7: #a4e1ff;
+$blue-8: #3cc5ff;
+$blue-9: #ceddea;
+$blue-10: #8db9ca;
+$blue-11: #33464d;
+$blue-12: #50798e;
+$blue-13: #486d9a;
+$blue-14: #0f529f;
+$blue-15: #6b838e;
+$blue-16: #e6eff0;
+$blue-17: #254a9f;
+$blue-18: #2c3e50;
+
+// Purple
+$purple: #516bf0;
+
+// Green
+$green-1: #6fb126;
+$geen-light: #e4e8e9;
+$green: #1cba5e;
+$green-2: #93B9C0;
+// Red
+$red: #cc0000;
+$red-1: #ff3860;
+$red-2: #d0021b;
+$red-3: #ff000c;
+$red-4: #f14a4b;
+$red-5: #dc3545;
+
+// Yellow
+$yellow-1: #f8f4e7;
+$yellow-2: #fedd00;
+$yellow-3: #fad800;
+
+// Orange
+$orange: #fa4616;
+$orange-1: #fcf8e3;
+$orange-2: #faebcc;
+$orange-3: #ff8d6d;
+
+// Usage Color
+$bgcolor: $geen-light;
+$color: $blue-2;
+$text-color: $color;
+$link-color: $blue-1;
+$link-hover-color: darken($link-color, 15%);
+$link-active-color: darken($link-color, 10%);
+$link-visited-color: darken($link-color, 5%);
+
+/* Grid System */
+$screen-smallest: 320px;
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+$screen-phone: $screen-xs-min;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-tablet: $screen-sm-min;
+$screen-md: 1024px;
+$screen-md-min: $screen-md;
+$screen-desktop: $screen-md-min;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+$screen-lg-desktop: $screen-lg-min;
+$screen-extra-lg: 1440px;
+$screen-extra-lg-min: $screen-extra-lg;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-extra-lg-max: ($screen-extra-lg-min - 1);
+
+// Grid variable
+$grid-gutter-width: 12px;
+$grid-gutter-cus-20: 20px;
+$grid-width-tablet: 940px;
+$grid-width-desktop: 940px;
+$grid-width-large-desktop: 1136px;
+$grid-width-larger-desktop: 1300px;
+
+$grid-tablet: ($grid-width-tablet + $grid-gutter-width);
+$grid-sm: $grid-tablet;
+$grid-desktop: ($grid-width-desktop + $grid-gutter-width);
+$grid-md: $grid-desktop;
+$grid-large-desktop: ($grid-width-large-desktop + $grid-gutter-width);
+$grid-lg: $grid-large-desktop;
+$grid-larger-desktop: ($grid-width-larger-desktop + $grid-gutter-width);
+$grid-larger: $grid-larger-desktop;
+
+//primary
+$primary: #019cde;
+$primary-1: #0c8cc3;
+$secondary: #93b9c0;

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'FSElliotPro';
+  src: url($font-path + 'FSElliotPro.woff2') format('woff2'), url($font-path + 'FSElliotPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FSElliotProLight';
+  src: url($font-path + 'FSElliotProLight.woff2') format('woff2'), url($font-path + 'FSElliotProLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FSElliotProBold';
+  src: url($font-path + 'FSElliotProBold.woff2') format('woff2'), url($font-path + 'FSElliotProBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FSElliotProHeavy';
+  src: url($font-path + 'FSElliotProHeavy.woff2') format('woff2'), url($font-path + 'FSElliotProHeavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* csslint ignore:start */
+@font-face {
+  font-family: 'acc-icon';
+  src: url($font-path + 'acc-icon.ttf') format('truetype'), url($font-path + 'acc-icon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,316 @@
+:root {
+  --primary: $primary;
+}
+span {
+  @include px2rem(font-size,16)
+}
+p {
+  @include px2rem(font-size,16)
+}
+.alert {
+  @include px2rem(font-size,16)
+}
+.table-striped tbody tr {
+  background-color: $grey-15
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white
+}
+.page-item {
+  display: flex
+}
+.page-link {
+  color: $primary;
+  &:hover {
+    background-color: $grey-20;
+    border-color: $grey-17;
+    color: $primary;
+  }
+}
+.page-item.active .page-link {
+  background-color: $grey-20;
+  border-color: $grey-17;
+  color: $primary;
+}
+
+.custom-control-label {
+  &:before{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: 1px solid $grey-18
+  }
+  &::after {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: $primary;
+}
+
+.custom-control-input:checked~.custom-control-label::after{
+  background-color: $primary;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: $grey-19;
+  border-color: $grey-19;
+  &:hover {
+    background-color: $grey-19;
+    border-color: $grey-19;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:hover {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:active {
+  background-color: $primary-1;
+  border-color: $primary-1;
+}
+
+.btn-primary:focus {
+  background-color: $primary-1;
+  border-color: $primary-1;
+}
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+}
+
+.btn-outline-primary:hover {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background-color: $primary-1;
+  border-color: $primary-1;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-secondary:hover {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-secondary:active {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-secondary:focus {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+.btn-outline-secondary {
+  color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-outline-secondary:hover {
+  color: $white;
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn {
+  padding: 1.4rem;
+  @include px2rem(font-size, 11);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.75rem 1.25rem;
+  @include px2rem(font-size, 9);
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 1.5rem 2rem;
+  @include px2rem(font-size, 13);
+}
+
+.input-datepicker>div>input {
+  padding: 0.95em 0.75em;
+  font-size: 13px;
+  border: 1px solid $grey-22;
+  width: 100% !important;
+  border-radius: 0.25em;
+  height: 40px;
+  color: $blue-2;
+}
+
+.form-control {
+  padding: 0.95em 0.75em;
+  font-size: 13px;
+  height: 40px;
+  color: $blue-2;
+}
+
+.list-group-item-action:hover {
+  background-color: $grey-16;
+  border-color: $grey-16;
+  color: $blue-2;
+}
+
+.list-group-item-action:active {
+  background-color: $grey-16;
+  color: $blue-2;
+}
+
+.list-group-item.active{
+  background-color: $grey-16;
+  border-color: $grey-16;
+  color: $blue-2;
+}
+
+.vdp-datepicker__calendar span.cell {
+  &.day-header {
+    font-size: 100%;
+  }
+  &.selected {
+    &,
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+
+.vbt-autcomplete-list {
+  text-align: left;
+}
+.text-align-l {
+  text-align: left
+}
+.text-align-c {
+  text-align: center
+}
+.mg-r-20 {
+  margin-right: 20px;
+}
+.mg-b-15 {
+  margin-bottom: 15px
+}
+.mg-t-15 {
+  margin-top: 15px
+}
+.mg-r-n20 {
+  margin-right: -20px;
+}
+
+.custom-file {
+  height: 40px;
+  .custom-file-input {
+    height: 100%;
+  }
+  .custom-file-label {
+    height: 100%;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include px2rem(font-size, 13);
+    padding: 1rem 105px 1rem 1rem;
+    &::after {
+      height: 100%;
+      background-color: $secondary;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid;
+      @include px2rem(letter-spacing, 1);
+      content: 'BROWSE',
+    }
+    &::after {
+      @include px2rem(padding, 10);
+      @include px2rem(font-size, 13);
+    }
+  }
+}
+
+.pagination-lg .page-link {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.error-border {
+  border: 1px solid $red;
+  border-radius: 0.25rem;
+  .dropdown__input-select,
+  .input-datepicker > div > input {
+    border: none;
+  }
+}
+
+.error-feedback {
+  color: $red;
+  display: block;
+  font-size: 1.3rem;
+  margin: 5px auto;
+}
+
+.pe-none{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.modal-notify{
+  font-size: 1.4rem;
+  &__header{
+    .modal-title{
+      font-weight: 600;
+      font-size: 18px;
+      color: $green;
+    }
+    .close{
+      align-self: center;
+    }
+  }
+}
+
+.avoid-click{
+  cursor: not-allowed;
+}
+
+.file-input{
+  position: relative;
+  &__icon{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 90px;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

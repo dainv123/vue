@@ -1,0 +1,14 @@
+@import "variables";
+@font-face {
+  font-family: "acc-icon";
+  src: url($font-path + "acc-icon.ttf?fe") format("truetype"),
+    url($font-path + "acc-icon.woff?fe") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "acc-icons";
+.icons-selector {
+  .acc-icon {
+    font-size: 30px;
+  }
+}

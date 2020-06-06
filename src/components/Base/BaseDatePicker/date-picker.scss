@@ -1,0 +1,62 @@
+.ui.input {
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(0, 0, 0, .87);
+
+  .input-datepicker {
+    width: 100%;
+
+    &:before {
+      content: "\E900";
+      cursor: pointer;
+      color: #244958;
+      font-family: "acc-icon" !important;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      font-size: 20px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}
+
+.ui.icon.input {
+  i.acc-icon {
+    color: #244958;
+    height: calc(100% - 2px);
+    margin: 0;
+    right: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include px2rem (font-size, 13);
+    transition: opacity .3s ease;
+    cursor: pointer;
+  }
+}
+
+.vdp-datepicker__calendar {
+  z-index: 1000;
+}
+
+.vdp-datepicker__clear-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.ui.icon.input.datepicker__icon {
+  .input-datepicker {
+    &:before {
+      content: '';
+    }
+  }
+}

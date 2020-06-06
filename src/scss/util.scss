@@ -1,0 +1,116 @@
+// Util
+.clearfix {
+  @include clearfix();
+}
+.center {
+  @include center-block();
+}
+.right {
+  float: right !important;
+}
+.left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+.invisible {
+  visibility: hidden;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.hero--reset {
+  @media (max-width: $screen-md-min) {
+    margin-top: 0 !important;
+  }
+}
+.visible-xs,
+.visible-sm,
+.visible-sm-up,
+.visible-md,
+.visible-md-up,
+.visible-lg {
+  display: none !important;
+}
+.visible-xs {
+  @media (max-width: $screen-xs-max) {
+    @include responsive-visibility();
+  }
+}
+.visible-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include responsive-visibility();
+  }
+}
+.visible-sm-up {
+  @media (min-width: $screen-sm-min) {
+    @include responsive-visibility();
+  }
+}
+.visible-md {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include responsive-visibility();
+  }
+}
+.visible-md-up {
+  @media (min-width: $screen-md-min) {
+    @include responsive-visibility();
+  }
+}
+.visible-lg {
+  @media (min-width: $screen-lg-min) {
+    @include responsive-visibility();
+  }
+}
+.hidden-xs {
+  @media (max-width: $screen-xs-max) {
+    @include  responsive-invisibility();
+  }
+}
+.hidden-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include  responsive-invisibility();
+  }
+}
+.hidden-sm-up {
+  @media (min-width: $screen-sm-min) {
+    @include  responsive-invisibility();
+  }
+}
+.hidden-md {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include  responsive-invisibility();
+  }
+}
+.hidden-md-up {
+  @media (min-width: $screen-md-min) {
+    @include  responsive-invisibility();
+  }
+}
+.hidden-lg {
+  @media (min-width: $screen-lg-min) {
+    @include  responsive-invisibility();
+  }
+}
