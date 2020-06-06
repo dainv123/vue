@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { END_POINTS } from './endpoints'
 
 export const AXIOS = axios.create({

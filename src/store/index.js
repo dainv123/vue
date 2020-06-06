@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import Authen from './modules/authen';
+
 Vue.use(Vuex);
 
 const state = {
