@@ -29,6 +29,12 @@ npm run start
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Structure 
+
+├── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+
 src
   |-- assets
   |-- components
